@@ -1,1 +1,3 @@
-_id,Title,EDB_id,CVE_id,Author,Type,Platform,Date,POC,CVE_id[0],CVE_id[1],CVE_id[2],CVE_id[3],CVE_id[4],CVE_id[5],CVE_id[6],CVE_id[7]
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f947cd1c390217a736fe0f6e8d2b80ae85852bc1e78207186cf9a0540688071
+size 167621348
