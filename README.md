@@ -483,19 +483,6 @@ Detailed output files are provided in:
 ```text
 results/
 ```
-
-The results can be organized according to the corresponding modules:
-
-```text
-results/
-├── RGFP/
-├── consistency/
-├── completeness/
-├── accuracy/
-├── currentness/
-└── MSVI/
-```
-
 ---
 
 ## 7. Security and Privacy Notes
