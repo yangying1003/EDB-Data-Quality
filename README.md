@@ -1,43 +1,44 @@
-# EDB-Data-Quality
+# Towards a Cleaner Exploit-DB: Data Quality Assessment and Automated Improvement of PoC Reports
 
-This repository provides the source code and experimental results for our study on the data quality assessment and improvement of Exploit-DB (EDB) PoC reports.
+## 1. Introduction
 
-## Overview
+Exploit-DB (EDB) contains a large number of publicly available Proof-of-Concept (PoC) reports that are widely used for vulnerability analysis, validation, and security research. However, inconsistencies, missing information, inaccurate fields, and publication delays may affect the reliability and usability of these reports.
 
-This study systematically assesses the data quality of Exploit-DB PoC reports from four dimensions:
+This repository provides the implementation of our framework for large-scale data quality assessment and automated improvement of Exploit-DB PoC reports.
 
-- Consistency
-- Completeness
-- Accuracy
-- Currentness
+The framework mainly contains three components:
 
-The repository contains the implementation of the proposed methods and the experimental results reported in the paper.
+1. **RGFP (Reasoning-Guided Few-shot Prompting)**  
+   RGFP uses large language models to extract four key fields from unstructured PoC reports:
 
-## Methods
+   - Type
+   - Platform
+   - CVE-ID
+   - Date
 
-The main methods include:
+2. **Four-dimensional Data Quality Assessment**  
+   The quality of PoC reports is assessed from four dimensions:
 
-### RGFP
-Reasoning-Guided Few-shot Prompting (RGFP) is used for LLM-based field extraction from PoC reports.
+   - Consistency
+   - Completeness
+   - Accuracy
+   - Currentness
 
-### Data Quality Assessment
-The extracted information is used to assess the quality of EDB PoC reports from four dimensions:
+3. **MSVI (Multi-source Semantic Verification and Improvement)**  
+   MSVI uses information from multiple vulnerability data sources to verify abnormal fields, correct Type and Platform information, and complete missing standardized headers.
 
-- Consistency
-- Completeness
-- Accuracy
-- Currentness
+The framework is designed for large-scale analysis of vulnerability reports containing both structured metadata and unstructured textual descriptions.
 
-### MSVI
-Multi-source Semantic Verification and Improvement (MSVI) is used to verify and improve abnormal or incomplete information using multiple external information sources.
+---
 
-## Repository Structure
+## 2. Requirements
+
+### 2.1 Software Environment
+
+The implementation is based on Python and MongoDB.
+
+Recommended environment:
 
 ```text
-EDB-Data-Quality/
-├── code/          # Source code
-├── prompts/       # Prompts used in LLM-based processing
-├── results/       # Experimental results
-├── data/          # Dataset description and sample data
-├── README.md
-└── requirements.txt
+Python >= 3.9
+MongoDB >= 5.0
