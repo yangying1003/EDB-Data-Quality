@@ -17,7 +17,7 @@ The framework mainly contains three components:
 
 2. **Four-dimensional Data Quality Assessment**  
    The quality of PoC reports is assessed from four dimensions:
-   - Consistency
+   - Consistness
    - Completeness
    - Accuracy
    - Currentness
