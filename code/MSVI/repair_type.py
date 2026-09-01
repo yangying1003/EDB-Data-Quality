@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Type 修正代码：只修正 EDB_s_type
-
-核心逻辑：
 1. 只要 edb_s_type 或 edb_us_type 中存在红色/橙色 Type 告警，
    就把该 score 文档放入待修正文档集合；
 2. 对进入待修正集合的文档，修正对象只针对 EDB_s_type；
