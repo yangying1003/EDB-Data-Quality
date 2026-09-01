@@ -3,7 +3,7 @@ from pygments.lexers import guess_lexer, ClassNotFound
 from pygments.token import Token
 
 # ----------------------------
-# 一、你原来的整篇判定函数（未改动）
+# 一、你原来的整篇判定函数
 # ----------------------------
 def detect_code_with_pygments_v4(content: str,
                                  token_ratio_threshold: float = 0.12,
